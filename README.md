@@ -93,7 +93,7 @@ Files: `momentum.py` (parts A, B, C), `walk_forward.py` (part D), `data.py` (dow
 | Test 2016-2026, strategy before costs | 15.3% | 0.65 | |
 | Test 2016-2026, strategy with harsh costs ($5 + 20 bps) | 13.2% | 0.56 | |
 
-- Test years: 353 orders, $87,384 in fees and slippage (4.8% of average equity), turnover 9.0x a year.
+- Test years: 353 orders, $87,384 in fees, spread and slippage (4.8% of average equity), turnover 9.0x a year.
 - **None of the 15 settings beat the market's test Sharpe** (best: 0.71 vs 0.73).
 - The pick that won the design window landed in the bottom half of the 15 in the test (0.62; textbook 12-1 top 3 got 0.70). Its Deflated Sharpe on the design window was 0.974 (N = 15).
 
