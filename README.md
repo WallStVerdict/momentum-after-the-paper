@@ -6,7 +6,7 @@
 
 **Claim tested:** "Momentum had 100 years of edge. Then the paper came out."
 
-Momentum means buying what went up over the past year and selling what went down.
+Momentum means buying what went up over the past 3 to 12 months and selling what went down.
 Jegadeesh & Titman published it in 1993 (*Returns to Buying Winners and Selling Losers*, Journal of Finance 48(1), 65-91).
 Carhart (1997, *On Persistence in Mutual Fund Performance*, Journal of Finance 52(1), 57-82) added a momentum factor to the Fama-French three-factor model.
 Ken French publishes a momentum factor ("Mom", often called UMD) every month back to 1927.
@@ -124,7 +124,7 @@ Files: `momentum.py` (parts A, B, C), `walk_forward.py` (part D), `data.py` (dow
 
 The rule we fixed in advance says DOESN'T, and `momentum.py` prints that: the factor's t-stat after the paper is under 2, and the frozen test lost to the market.
 Our overall call is PARTLY, because of the walk-forward we added after that rule was written.
-After 1993 it ranged from 0.41 to 0.56 across four look-backs, against the market's 0.52, so at best it roughly tied.
+After 1993 its Sharpe ranged from 0.41 to 0.56 across four look-backs, against the market's 0.52, so on Sharpe it roughly tied at best.
 That judgement is ours, and you can read it against the numbers above.
 
 Momentum was real. Over 99 years its t-stat is 4.6, and it survives the deflation test.
