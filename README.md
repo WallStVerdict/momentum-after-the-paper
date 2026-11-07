@@ -153,7 +153,7 @@ The Sharpe gap (0.62 vs 0.73) is wider.
 
 ## Licences
 
-- Our code (`*.py`, `Makefile`, `Dockerfile`): MIT, see `LICENSE`.
+- Our code (`*.py`, `Makefile`, `Dockerfile`): MIT, see `LICENSE`. Third-party notes: `NOTICE`.
 - Data: Kenneth R. French Data Library, Copyright Eugene F. Fama and Kenneth R. French, built from CRSP.
   Not included here; `make reproduce` downloads it.
 - Engine: `bt` and `ffn` (MIT). Also pandas, numpy, scipy, scikit-learn (BSD), matplotlib (PSF-style). No AGPL code is used.

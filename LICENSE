@@ -7,13 +7,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
----------------------------------------------------------------------------
-Third-party material (not covered by the MIT licence above):
-
-- Ken French data: Kenneth R. French Data Library, Copyright Eugene F. Fama and Kenneth R. French,
-  https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html (built from CRSP).
-  NOT included in this repo. `make reproduce` downloads it from the library into data/.
-- fonts/Inter-*.ttf: SIL Open Font License 1.1, see fonts/OFL-Inter.txt.
-- Python dependencies (installed, not included): bt and ffn (MIT), pandas, numpy, scipy, scikit-learn,
-  matplotlib (BSD / PSF-style). No AGPL code is used.

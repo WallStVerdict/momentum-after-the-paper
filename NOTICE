@@ -1,0 +1,8 @@
+Third-party material (not covered by the MIT licence above):
+
+- Ken French data: Kenneth R. French Data Library, Copyright Eugene F. Fama and Kenneth R. French,
+  https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html (built from CRSP).
+  NOT included in this repo. `make reproduce` downloads it from the library into data/.
+- fonts/Inter-*.ttf: SIL Open Font License 1.1, see fonts/OFL-Inter.txt.
+- Python dependencies (installed, not included): bt and ffn (MIT), pandas, numpy, scipy, scikit-learn,
+  matplotlib (BSD / PSF-style). No AGPL code is used.
