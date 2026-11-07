@@ -1,0 +1,58 @@
+momentum | Ken French data library, CRSP vintage 202609
+
+A. THE FACTOR AS PUBLISHED (Ken French UMD, monthly, before costs)
+period               months  ann.ret  Sharpe     t          worst month   max DD
+Full sample            1197     7.4%    0.46   4.6    -52.6%   Aug 1932     -78%
+J&T's own sample        300     9.9%    0.80   4.0    -13.8%   Jan 1975     -20%
+Before publication      804     8.8%    0.55   4.5    -52.6%   Aug 1932     -78%
+After publication       393     4.5%    0.27   1.5    -34.4%   Apr 2009     -58%
+Last 10 years           120     3.1%    0.22   0.7    -16.2%   Jan 2023     -25%
+market (Mkt-RF), same periods
+Full sample            1197     8.3%    0.45   4.5
+J&T's own sample        300     4.3%    0.27   1.3
+Before publication      804     7.9%    0.40   3.3
+After publication       393     9.2%    0.60   3.4
+Last 10 years           120    13.0%    0.82   2.6
+Mean UMD return after 1993 vs before: 49% lower (McLean & Pontiff 2016: 58% average for 97 predictors)
+Probabilistic Sharpe, full sample, N=1:    0.9999  (needs 0.95; skew -3.0, kurtosis 30.3)
+Deflated Sharpe, full sample, N=16:        0.9870  (J&T tried 16 formation/holding combos)
+Tries it could be the best of and pass:    96
+Probabilistic Sharpe, after 1993, N=1:     0.9266
+
+B. DO IT YOURSELF (bt, 10 Ken French industry portfolios, daily, monthly rotation)
+Costs: Retail ETF broker: $1.00 an order + 2 bps spread + 3 bps slippage, every buy and every sell. Start $100,000.
+Chosen on design window 1999-2015 from 15 settings: 6-1 month return, top 2
+Deflated Sharpe of that pick, N=15: 0.974 (needs 0.95)
+                              CAGR     vol  Sharpe     t   max DD
+design 1999-2015
+  strategy, after costs      11.3%   20.1%    0.54   2.2     -46%
+  market, buy and hold        5.4%   20.1%    0.27   1.1     -55%
+  10 industries, equal wt     6.9%   18.7%    0.35   1.4     -53%
+test 2016-2026
+  strategy, after costs      14.7%   22.4%    0.62   2.0     -38%
+  market, buy and hold       15.0%   18.3%    0.73   2.4     -34%
+  10 industries, equal wt    13.1%   17.1%    0.67   2.2     -37%
+  strategy before costs       15.3%   22.4%    0.65
+  strategy, harsh costs       13.2%   22.4%    0.56   (Harsh: $5.00 an order + 10 bps spread + 10 bps slippage, every buy and every sell)
+Test orders 353, fees $87,384 (4.8% of average equity), turnover 9.0x a year
+All 15 settings (Sharpe design -> test); beat the market's test Sharpe: 0 of 15
+   6-1, top 1: 0.49 -> 0.52
+   6-1, top 2: 0.54 -> 0.62
+   6-1, top 3: 0.42 -> 0.56
+   6-1, top 4: 0.43 -> 0.69
+   6-1, top 5: 0.43 -> 0.67
+   9-1, top 1: 0.45 -> 0.38
+   9-1, top 2: 0.38 -> 0.57
+   9-1, top 3: 0.41 -> 0.69
+   9-1, top 4: 0.41 -> 0.62
+   9-1, top 5: 0.41 -> 0.67
+  12-1, top 1: 0.42 -> 0.64
+  12-1, top 2: 0.42 -> 0.65
+  12-1, top 3: 0.42 -> 0.70
+  12-1, top 4: 0.43 -> 0.69
+  12-1, top 5: 0.43 -> 0.71
+
+C. PRE-SET RULE, factor + frozen test: DOESN'T
+  factor after publication t >= 2: no
+  DIY beats the market 2016-2026 on Sharpe and return, after costs: no
+Education, not advice.
