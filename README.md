@@ -1,8 +1,8 @@
 # Momentum after the paper
 
-<!-- YOUTUBE THUMBNAIL GOES HERE. After upload replace the next line with:
-     [![Watch the episode](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID) -->
-**Episode video: link coming after upload.**
+[![Momentum made 8.8% a year. After a 1993 paper, 4.5%. We tested it.](https://img.youtube.com/vi/3nfk5GAzLbQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=3nfk5GAzLbQ)
+
+**Watch the episode:** [Momentum made 8.8% a year. After a 1993 paper, 4.5%. We tested it.](https://www.youtube.com/watch?v=3nfk5GAzLbQ) (5 min)
 
 **Claim tested:** "Momentum had 100 years of edge. Then the paper came out."
 
